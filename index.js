@@ -6,7 +6,6 @@ require('dotenv').config();
 (async () => {
     fs = require('fs');
     const browser = await puppeteer.launch({headless: false});
-    sendDiscord("this a test", 'testing')
     const page = await browser.newPage();
     let inStock = false;
     while(true){
